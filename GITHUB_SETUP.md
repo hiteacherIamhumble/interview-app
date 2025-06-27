@@ -23,7 +23,7 @@ After creating the repository, GitHub will show you instructions. Use these comm
 cd "/Users/peterdai/Desktop/Post-production Interview/interview-app"
 
 # Add the remote origin (replace YOUR_USERNAME with your GitHub username)
-git remote add origin https://github.com/YOUR_USERNAME/interview-app.git
+git remote add origin https://github.com/hiteacherIamhumble/interview-app.git
 
 # Push to GitHub
 git branch -M main
