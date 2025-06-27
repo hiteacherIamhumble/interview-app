@@ -66,7 +66,7 @@ const Timer = () => {
   return (
     <div style={{
       position: 'fixed',
-      top: '15vh',
+      bottom: '2vh',
       right: '2vw',
       background: 'rgba(26, 26, 46, 0.95)',
       border: '2px solid rgba(255, 255, 255, 0.1)',
