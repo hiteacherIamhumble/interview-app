@@ -9,7 +9,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/interview-app">
       <div className="app">
         <Timer />
         <nav className="navigation">
