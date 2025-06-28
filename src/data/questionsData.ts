@@ -1,3 +1,9 @@
+import Set1 from '../assets/Set1.png';
+import Set2 from '../assets/Set2.png';
+import Set3 from '../assets/Set3.webp';
+import Set4 from '../assets/Set4.png';
+import Set5 from '../assets/Set5.jpeg';
+
 export interface Question {
   id: string;
   setNumber: number;
@@ -64,7 +70,7 @@ export const photoQuestions: Question[] = [
         zh: "- 创建亮度蒙版：范围蒙版 > 亮度0-50用于阴影\n- 应用色彩分级：阴影 - 色相220°（蓝色），饱和度15，明度5\n- 创建第二个蒙版：亮度50-100用于高光/天空\n- 色彩分级：高光 - 色相30°（橙色），饱和度20，明度8\n- HSL调整：橙色明度+15，饱和度+20；红色明度+10，饱和度+15\n- 使用颜色混合器微调：橙色色相向红色偏移+10，黄色色相向橙色偏移-5\n- 平衡调整：全局自然饱和度+25，饱和度-5"
       }
     },
-    imagePath: "/assets/Set1.png"
+    imagePath: Set1
   },
   {
     id: "set2",
@@ -97,7 +103,7 @@ export const photoQuestions: Question[] = [
         zh: "- 选择主体 > 为整个人物创建蒙版\n- 复制蒙版，使用颜色范围减去礼服以外的所有内容（亮度：90-100）\n- 创建新蒙版：皮肤的颜色范围（采样皮肤，优化：25-30）\n- 礼服蒙版调整：自然饱和度-100，饱和度-50以去除色偏\n- 皮肤蒙版：橙色主要-5饱和度，+5明度；红色：-3饱和度\n- 全局颜色混合器：黄色饱和度-20，橙色色相向红色+5\n- 使用带自动蒙版的画笔蒙版清理边缘过渡\n- 最后润色：校准面板 - 红色主色相+5，绿色主色相-3"
       }
     },
-    imagePath: "/assets/Set2.png"
+    imagePath: Set2
   },
   {
     id: "set3",
@@ -130,7 +136,7 @@ export const photoQuestions: Question[] = [
         zh: "- 选择人物 > 选择皮肤（AI检测）\n- 皮肤调整：纹理-40，清晰度-20，去雾+10\n- 皮肤蒙版上的HSL：橙色：色相+5，饱和度-15，明度+10\n- 红色：色相+3，饱和度-10，明度+5\n- 创建单独蒙版：选择眼白+虹膜\n- 眼睛：曝光+0.3，清晰度+20，锐化+30\n- 反转皮肤蒙版用于头发/服装：纹理+20，清晰度+15\n- 嘴唇蒙版：饱和度+10，明度+5\n- 背景分离：亮度蒙版，清晰度-40，饱和度-30"
       }
     },
-    imagePath: "/assets/Set3.webp"
+    imagePath: Set3
   },
   {
     id: "set4",
@@ -163,7 +169,7 @@ export const photoQuestions: Question[] = [
         zh: "- 为雾层创建3个亮度蒙版：L0-30，L30-60，L60-90\n- 近雾（L60-90）：色彩分级 - 高光蓝色200°，饱和度5，明度+10\n- 中雾（L30-60）：中性分级，明度+5\n- 远雾（L0-30）：轻微暖色分级，橙色30°，饱和度3\n- 山峰：通过颜色范围选择（采样日出颜色）\n- 山峰HSL：橙色+20明度，+15饱和度；粉色+10明度，+20饱和度\n- 阴影保留：蓝色明度-5，紫色饱和度+10\n- 雾增强：仅为雾创建蒙版，高光+20，白色+15\n- 分离色调：高光35°暖色饱和度8，阴影220°冷色饱和度12"
       }
     },
-    imagePath: "/assets/Set4.png"
+    imagePath: Set4
   },
   {
     id: "set5",
@@ -196,6 +202,6 @@ export const photoQuestions: Question[] = [
         zh: "- 使用高精度优化选择对象\n- 复制蒙版，使用颜色范围仅选择反射\n- 反射蒙版：饱和度-60至-80，针对污染\n- 产品上的HSL调整：识别污染颜色\n- 例如：绿色反射 - 绿色饱和度-100，青色-80\n- 创建边缘优化蒙版：选择对象 > 优化边缘\n- 边缘蒙版：清晰度+30，去雾+10以增强定义\n- 颜色保护：为产品的实际颜色创建蒙版\n- 受保护区域：饱和度+10至+20以补偿\n- 最终润色：校准面板调整以获得精确的中性"
       }
     },
-    imagePath: "/assets/Set5.jpeg"
+    imagePath: Set5
   }
 ];
